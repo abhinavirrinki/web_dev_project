@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="dashboard">
+        <header class="header">
+            <div class="header-left">
+                <label for="sidebar-toggle" class="icon-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <span class="logo">AdminBoard</span>
+            </div>
+            <div class="header-right">
+                <label for="theme-toggle" class="icon-btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </label>
+                <div class="profile">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span>User</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <ul class="nav-list">
+                <li><a href="#"><i class="fa-solid fa-gauge"></i><span>Overview</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-line"></i><span>Analytics</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i><span>Users</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-folder"></i><span>Reports</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <section class="stats-grid">
+                <div class="card stat-card">
+                    <div>
+                        <span class="stat-label">Total Users</span>
+                        <h2>12,480</h2>
+                    </div>
+                    <i class="fa-solid fa-users stat-icon"></i>
+                </div>
+                <div class="card stat-card">
+                    <div>
+                        <span class="stat-label">Revenue</span>
+                        <h2>$48,200</h2>
+                    </div>
+                    <i class="fa-solid fa-indian-rupee-sign stat-icon"></i>
+                </div>
+                <div class="card stat-card">
+                    <div>
+                        <span class="stat-label">Orders</span>
+                        <h2>1,340</h2>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping stat-icon"></i>
+                </div>
+                <div class="card stat-card">
+                    <div>
+                        <span class="stat-label">Growth</span>
+                        <h2>+18.4%</h2>
+                    </div>
+                    <i class="fa-solid fa-arrow-trend-up stat-icon"></i>
+                </div>
+            </section>
+
+            <section class="charts-grid">
+                <div class="card">
+                    <h3>Monthly Traffic</h3>
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <div class="bar" style="height: 55%;"></div>
+                            <span>Jan</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 80%;"></div>
+                            <span>Feb</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 45%;"></div>
+                            <span>Mar</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 90%;"></div>
+                            <span>Apr</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 70%;"></div>
+                            <span>May</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>System Targets</h3>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-head">
+                                <span>Server Uptime</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-head">
+                                <span>Storage Used</span>
+                                <span>64%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 64%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-head">
+                                <span>Goal Completion</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>Web Workshop Project 6 &bull; Responsive Admin Dashboard</span>
+        </footer>
+    </div>
+</body>
+</html>
